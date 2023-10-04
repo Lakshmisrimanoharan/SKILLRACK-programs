@@ -1,0 +1,29 @@
+#check str whether the character is num or digit and print ascii if it is alpha or print the value if it is int
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	    Scanner sc=new Scanner(System.in);
+	    String str=sc.nextLine();
+	    for(int i=0;i<str.length();i++)
+	    {
+	        if(Character.isAlphabetic(str.charAt(i)))
+	        {
+	            char ch=str.charAt(i);
+	            System.out.print((int)ch);
+	        }
+	        else
+	        {
+	            System.out.print(str.charAt(i));
+	        }
+	    }
+	}
+}
+
+output :
+12aA 
+1 2 97 65
+
+
+  (ANOTHER WAY TO PRINT THE  THE LOGIC) using arr or else in string
