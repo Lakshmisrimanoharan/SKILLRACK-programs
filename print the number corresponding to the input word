@@ -1,0 +1,38 @@
+# The program must accept a string and print the number that represent by word
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String Str = sc.nextLine();
+        String[] words = Str.split("\\s+");
+        for (int i = 0; i < words.length; i++) {
+            if (words[i].equals("one")) {
+                System.out.print("1");
+            } else if (words[i].equals("two")) {
+                System.out.print("2");
+            } else if (words[i].equals("three")) {
+                System.out.print("3");
+            } else if (words[i].equals("four")) {
+                System.out.print("4");
+            } else if (words[i].equals("five")) {
+                System.out.print("5");
+            } else if (words[i].equals("six")) {
+                System.out.print("6");
+            } else if (words[i].equals("seven")) {
+                System.out.print("7");
+            } else if (words[i].equals("eight")) {
+                System.out.print("8");
+            } else if (words[i].equals("nine")) {
+                System.out.print("9");
+            } else if (words[i].equals("zero")) {
+                System.out.print("0");
+            }
+        }
+    }
+}
+
+output:
+one two four eight five
+12485
