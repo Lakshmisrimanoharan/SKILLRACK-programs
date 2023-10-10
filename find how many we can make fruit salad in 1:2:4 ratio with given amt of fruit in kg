@@ -1,0 +1,26 @@
+#Three fruits A,B,C are given in xkg,ykg and zkg.Find how many time times we can make fruit salad in 1:2:4 ratio using the given input.
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	int x = sc.nextInt();
+	int y = sc.nextInt();
+	int  z = sc.nextInt();
+	int count =0;
+	while(x >=1 && y>=2 && z>=4){
+	    count ++;
+	    x = x - 1;
+	    y = y - 2;
+	    z = z - 4;
+	}
+	System.out.print(count);
+	}
+}
+
+output:
+1 2 4
+2
+
+2 5 10
+2
