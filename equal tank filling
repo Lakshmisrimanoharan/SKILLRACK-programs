@@ -1,0 +1,36 @@
+import java.util.*;
+public class Main
+{
+public static void main(String[] args)
+{
+Scanner sc=new Scanner(System.in);
+int x=sc.nextInt();
+int y=sc.nextInt();
+int z=sc.nextInt();
+if(x>y && x>z)
+{
+   y=x-y;
+   z=x-z;
+   System.out.println(y+z);
+}
+else if(y>z)
+{
+   x=y-x;
+   z=y-z;
+   System.out.println(x+z);
+}
+else
+{
+   x=z-x;
+   y=z-y;
+   System.out.println(x+y);
+}
+}
+}
+
+output:
+10 7 5
+8
+
+explanation:
+x , y and z are the liters filled in A, B and C tank find the largest value and fill the other tank in same liters
