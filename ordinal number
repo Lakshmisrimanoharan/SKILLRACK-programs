@@ -1,0 +1,39 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		    int rem1=0,rem2=0;
+		    rem1=n%10;
+		    rem2=n%100;
+		    if(n==11||n==12||n==13||n==61||rem2==11||rem2==12||rem2==13)
+		    {
+		        System.out.println(n+"th");
+		    }
+		    else if(rem1==1)
+		    {
+		        System.out.println(n+"st");
+		    }
+		    else if(rem1==2)
+		    {
+		        System.out.println(n+"nd");
+		    }
+		    else if(rem1==3)
+		    {
+		        System.out.println(n+"rd");
+		    }
+		    else
+		    {
+		        System.out.println(n+"th");
+		    }
+	}
+}
+input:
+11
+11th
+21
+21st
+1 
+1st
